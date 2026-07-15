@@ -1,28 +1,29 @@
-# Hotel Management System
+# Employee Management System - Web API
 
 ## Project Overview
 
-Hotel Management System is a Windows Forms desktop application developed using C# and SQL Server to simplify hotel operations.
+Employee Management System Web API is a RESTful API developed using ASP.NET Core Web API, Entity Framework Core, and SQL Server.
 
-The application helps manage customer details, room bookings, and billing processes efficiently through an easy-to-use interface.
+The API provides endpoints to manage employee data efficiently by performing CRUD (Create, Read, Update, Delete) operations. It follows REST API principles and uses Entity Framework Core for database communication.
 
 ## Features
 
-- Customer registration and management
-- Room booking management
-- View and manage booking details
-- Billing calculation
+- Create new employee records
+- Retrieve employee details
+- Update existing employee information
+- Delete employee records
+- RESTful API architecture
 - SQL Server database integration
-- User-friendly Windows Forms interface
-- Efficient data storage and retrieval
+- Entity Framework Core ORM implementation
+- Data management using HTTP methods
 
 ## Technologies Used
 
-### Programming Language
+### Backend
+- ASP.NET Core Web API
 - C#
-
-### Framework
-- Windows Forms (.NET)
+- Entity Framework Core
+- REST API
 
 ### Database
 - SQL Server
@@ -32,21 +33,39 @@ The application helps manage customer details, room bookings, and billing proces
 - SQL Server Management Studio
 - Git & GitHub
 
-## Application Workflow
+## API Operations
 
-1. User enters customer details through the Windows Forms interface.
-2. Booking information is captured and stored in SQL Server.
-3. Application retrieves and displays customer and booking records.
-4. Billing details are calculated based on booking information.
+The API supports the following HTTP methods:
+
+
+GET /api/Employee - Retrieve all employees
+
+GET /api/Employee/{id} - Retrieve employee by ID
+
+POST /api/Employee - Add new employee
+
+PUT /api/Employee/{id} - Update employee details
+
+DELETE /api/Employee/{id} - Delete employee
+
+
+## Project Architecture
+
+### Controller Layer
+Handles HTTP requests and responses.
+
+### Model Layer
+Contains employee entity classes.
+
+### Data Access Layer
+Uses Entity Framework Core DbContext to communicate with SQL Server database.
 
 ## Database
 
 Database: SQL Server
 
-Main modules:
-- Customer Management
-- Room Booking
-- Billing Management
+Entity:
+- Employee
 
 ## Installation and Setup
 
@@ -54,23 +73,27 @@ Main modules:
 
 2. Open the project in Visual Studio.
 
-3. Configure the SQL Server connection string.
+3. Update the SQL Server connection string in:
 
-4. Create the required database and tables.
 
-5. Build and run the Windows Forms application.
+appsettings.json
 
-## Screenshots
 
-(Add application screenshots here)
+4. Apply Entity Framework migrations:
+
+
+Update-Database
+
+
+5. Run the ASP.NET Core Web API application.
+
+6. Test API endpoints using browser or API testing tools.
 
 ## Future Enhancements
 
-- User authentication and login module
-- Room availability tracking
-- Online booking integration
-- Advanced reporting and analytics
+- Add authentication and authorization using JWT
+- Implement role-based access control
+- Add pagination and search functionality
+- Add API documentation using Swagger
 
 ## Author
-
-Lakshmi Priya
