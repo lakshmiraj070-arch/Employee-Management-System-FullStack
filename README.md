@@ -1,10 +1,10 @@
-# Employee Management System - Fullstack
+# Employee Management System - Full Stack
 
 ## Overview
 
-This project is the React.js frontend for the Employee Management System. It provides a modern and responsive user interface for managing employee records by consuming an ASP.NET Core Web API.
+Employee Management System is a Full Stack web application developed using React.js, ASP.NET Core Web API, Entity Framework Core, and Microsoft SQL Server. The application enables users to perform complete CRUD (Create, Read, Update, Delete) operations on employee records through a responsive user interface integrated with RESTful APIs.
 
-The application performs CRUD (Create, Read, Update, Delete) operations and integrates with SQL Server through RESTful APIs.
+This project demonstrates frontend-backend integration, REST API development, database management, and modern web application development using the .NET technology stack.
 
 ---
 
@@ -14,84 +14,152 @@ The application performs CRUD (Create, Read, Update, Delete) operations and inte
 - View Employee List
 - Update Employee Details
 - Delete Employee
-- Form Validation
-- Employee Search
-- Employee Count Display
 - Responsive User Interface
-- Modern UI with Icons
 - REST API Integration
+- SQL Server Database Connectivity
+- Entity Framework Core Code First
+- Form Validation
 
 ---
 
 ## Technologies Used
+
+### Frontend
 
 - React.js
 - JavaScript
 - HTML5
 - CSS3
 - Fetch API
-- ASP.NET Core Web API (Backend)
-- SQL Server
+
+### Backend
+
+- ASP.NET Core Web API
+- C#
+- Entity Framework Core
+- REST API
+
+### Database
+
+- Microsoft SQL Server
+
+### Development Tools
+
+- Visual Studio 2022
+- Visual Studio Code
+- SQL Server Management Studio (SSMS)
+- Git
+- GitHub
+
+---
+
+## Project Architecture
+
+```
+React.js Frontend
+        |
+     Fetch API
+        |
+ASP.NET Core Web API
+        |
+Entity Framework Core
+        |
+Microsoft SQL Server
+```
 
 ---
 
 ## Project Structure
 
 ```
-myproject
+Employee-Management-System-FullStack
+
+├── Frontend (React.js)
+│   ├── src
+│   ├── public
+│   └── package.json
 │
-├── src
-│   ├── app
-│   │   ├── insertdemo
-│   │   ├── selectdemo
-│   │   ├── globals.css
-│   │   └── page.js
-│
-├── public
-├── package.json
-└── README.md
+├── Backend (ASP.NET Core Web API)
+│   ├── Controllers
+│   ├── Models
+│   ├── Data
+│   ├── Migrations
+│   ├── appsettings.json
+│   └── Program.cs
 ```
 
 ---
 
 ## Functionalities
 
-### Add Employee
+### Create
 
-- Add new employee records
-- Form validation for Name, Designation and Salary
+- Add new employee records using the React interface.
 
-### Employee List
+### Read
 
-- Display all employees
-- Search employees by name
-- Employee count display
+- Display all employee records retrieved from the Web API.
 
-### Update Employee
+### Update
 
-- Edit existing employee details
-- Validation before updating
+- Modify employee information and save changes to the database.
 
-### Delete Employee
+### Delete
 
-- Delete employee records
-- Confirmation before deletion
+- Remove employee records from SQL Server.
 
 ---
 
-## Backend Repository
+## Database
 
-This frontend consumes the ASP.NET Core Web API available in the EmployeeAPI repository.
+Database Name
+
+```
+EmployeeManagementDB
+```
+
+Table Name
+
+```
+Employee
+```
+
+---
+
+## How to Run the Project
+
+1. Clone the repository.
+2. Open the backend project in Visual Studio 2022.
+3. Configure the SQL Server connection string in `appsettings.json`.
+4. Run EF Core migrations.
+5. Start the ASP.NET Core Web API.
+6. Open the React project in Visual Studio Code.
+7. Install dependencies:
+
+```bash
+npm install
+```
+
+8. Start the React application:
+
+```bash
+npm start
+```
+
+9. Open:
+
+```
+http://localhost:3000
+```
 
 ---
 
 ## Future Enhancements
 
-- Login Authentication
-- JWT Authorization
+- JWT Authentication
+- Role-Based Authorization
+- Search and Filtering
 - Pagination
-- Sorting
-- Advanced Search
 - Dashboard
 - Export to Excel/PDF
 
@@ -101,5 +169,10 @@ This frontend consumes the ASP.NET Core Web API available in the EmployeeAPI rep
 
 **Lakshmi Priya**
 
-GitHub:
-https://github.com/lakshmiraj070-arch
+GitHub: https://github.com/lakshmiraj070-arch
+
+---
+
+## License
+
+This project is developed for learning and portfolio purposes.
