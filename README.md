@@ -1,99 +1,105 @@
-# Employee Management System - Web API
+# Employee Management System - Frontend
 
-## Project Overview
+## Overview
 
-Employee Management System Web API is a RESTful API developed using ASP.NET Core Web API, Entity Framework Core, and SQL Server.
+This project is the React.js frontend for the Employee Management System. It provides a modern and responsive user interface for managing employee records by consuming an ASP.NET Core Web API.
 
-The API provides endpoints to manage employee data efficiently by performing CRUD (Create, Read, Update, Delete) operations. It follows REST API principles and uses Entity Framework Core for database communication.
+The application performs CRUD (Create, Read, Update, Delete) operations and integrates with SQL Server through RESTful APIs.
+
+---
 
 ## Features
 
-- Create new employee records
-- Retrieve employee details
-- Update existing employee information
-- Delete employee records
-- RESTful API architecture
-- SQL Server database integration
-- Entity Framework Core ORM implementation
-- Data management using HTTP methods
+- Add Employee
+- View Employee List
+- Update Employee Details
+- Delete Employee
+- Form Validation
+- Employee Search
+- Employee Count Display
+- Responsive User Interface
+- Modern UI with Icons
+- REST API Integration
+
+---
 
 ## Technologies Used
 
-### Backend
-- ASP.NET Core Web API
-- C#
-- Entity Framework Core
-- REST API
-
-### Database
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Fetch API
+- ASP.NET Core Web API (Backend)
 - SQL Server
 
-### Tools
-- Visual Studio
-- SQL Server Management Studio
-- Git & GitHub
+---
 
-## API Operations
+## Project Structure
 
-The API supports the following HTTP methods:
+```
+myproject
+│
+├── src
+│   ├── app
+│   │   ├── insertdemo
+│   │   ├── selectdemo
+│   │   ├── globals.css
+│   │   └── page.js
+│
+├── public
+├── package.json
+└── README.md
+```
 
+---
 
-GET /api/Employee - Retrieve all employees
+## Functionalities
 
-GET /api/Employee/{id} - Retrieve employee by ID
+### Add Employee
 
-POST /api/Employee - Add new employee
+- Add new employee records
+- Form validation for Name, Designation and Salary
 
-PUT /api/Employee/{id} - Update employee details
+### Employee List
 
-DELETE /api/Employee/{id} - Delete employee
+- Display all employees
+- Search employees by name
+- Employee count display
 
+### Update Employee
 
-## Project Architecture
+- Edit existing employee details
+- Validation before updating
 
-### Controller Layer
-Handles HTTP requests and responses.
+### Delete Employee
 
-### Model Layer
-Contains employee entity classes.
+- Delete employee records
+- Confirmation before deletion
 
-### Data Access Layer
-Uses Entity Framework Core DbContext to communicate with SQL Server database.
+---
 
-## Database
+## Backend Repository
 
-Database: SQL Server
+This frontend consumes the ASP.NET Core Web API available in the EmployeeAPI repository.
 
-Entity:
-- Employee
-
-## Installation and Setup
-
-1. Clone the repository.
-
-2. Open the project in Visual Studio.
-
-3. Update the SQL Server connection string in:
-
-
-appsettings.json
-
-
-4. Apply Entity Framework migrations:
-
-
-Update-Database
-
-
-5. Run the ASP.NET Core Web API application.
-
-6. Test API endpoints using browser or API testing tools.
+---
 
 ## Future Enhancements
 
-- Add authentication and authorization using JWT
-- Implement role-based access control
-- Add pagination and search functionality
-- Add API documentation using Swagger
+- Login Authentication
+- JWT Authorization
+- Pagination
+- Sorting
+- Advanced Search
+- Dashboard
+- Export to Excel/PDF
+
+---
 
 ## Author
+
+**Lakshmi Priya**
+
+GitHub:
+https://github.com/lakshmiraj070-arch
