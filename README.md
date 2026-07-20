@@ -1,4 +1,4 @@
-# Employee Management System - Frontend
+# Employee Management System - Fullstack
 
 ## Overview
 
